@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+header img {
+    width: 60px;
+    flex-shrink: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.search-bar {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: .75rem;
+    font-size: 1rem;
+}
+
+.search-bar button {
+    padding: .75rem;
+    cursor: pointer;
+}
+
+
+hr {
+    margin-bottom: 1rem;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    border: 1px solid #999;
+    border-radius: 8px;
+    padding: .75rem;
+
+    width: 100%;
+}
+
+.recipe-image {
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-image img {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+}
+
+.recipe-info h2 {
+    margin: .5rem 0;
+    font-family: 'Amatic SC', cursive;
+    color: #1e90ff;
+    font-size: 2rem;
+}
+
+.tag {
+    display: inline-block;
+    border: 1px solid black;
+    padding: .25rem .5rem;
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+
+.rating {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.recipe-info p {
+    display: none;
+}
+
+
+footer {
+    margin-top: 2rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: .75rem;
+}
+
+.social img {
+    width: 30px;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    font-size: .6rem;
+}
+
+.search-bar button {
+    padding: .5rem;
+    cursor: pointer;
+    background: white;
+    border: 1px solid #999;
+}
+
+.search-bar button img {
+    width: 24px;
+    height: 24px;
+}
+
+@media screen and (min-width: 700px) {
+
+    header img {
+        width: 90px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .recipe-card {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .recipe-image {
+        flex: 1;
+    }
+
+    .recipe-image img {
+        max-width: 100%;
+    }
+
+    .recipe-info {
+        flex: 1;
+    }
+
+   
+    .recipe-info p {
+        display: block;
+    }
+
+    .social {
+        justify-content: flex-end;
+    }
+
+    footer a {
+        text-align: left;
+        font-size: .8rem;
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Your Recipe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="images/AdobeStock_553007886.jpeg" alt="Family Recipes Logo">
+        <h1>Family Recipes</h1>
+    </div>
+
+</header>
+
+<main class="add-page">
+
+    <section class="recipe-form">
+
+        <h2>Add Your Family Recipe</h2>
+
+        <form>
+
+            <label for="recipeName">Recipe Name</label>
+            <input
+                type="text"
+                id="recipeName"
+                placeholder="Grandma's Apple Pie">
+
+            <label for="category">Type of Dish</label>
+
+            <select id="category">
+
+                <option>Breakfast</option>
+                <option>Lunch</option>
+                <option>Dinner</option>
+                <option>Sweets</option>
+                <option>Drinks</option>
+                <option>Holiday Meals</option>
+
+            </select>
+
+            <label for="cookTime">Cook Time (minutes)</label>
+
+            <input
+                type="number"
+                id="cookTime"
+                placeholder="30">
+
+            <label for="difficulty">Difficulty</label>
+
+            <select id="difficulty">
+
+                <option>★☆☆☆☆</option>
+                <option>★★☆☆☆</option>
+                <option>★★★☆☆</option>
+                <option>★★★★☆</option>
+                <option>★★★★★</option>
+
+            </select>
+
+            <label for="image">Recipe Image</label>
+
+            <input
+                type="file"
+                id="image"
+                accept="image/*">
+
+            <label for="ingredients">Ingredients</label>
+
+            <textarea
+                id="ingredients"
+                rows="6"
+                placeholder="List ingredients here..."></textarea>
+
+            <label for="instructions">Instructions</label>
+
+            <textarea
+                id="instructions"
+                rows="8"
+                placeholder="Write the recipe instructions here..."></textarea>
+
+            <button type="submit" class="submitBtn">
+                Add Recipe
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <a href="main.html" class="homeButton">
+        ← Back to Home
+    </a>
+
+</footer>
+
+</body>
+</html>

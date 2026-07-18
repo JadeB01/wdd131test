@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Family Recipes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    //google fonts//
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/AdobeStock_553007886.jpeg" alt="Family Recipes Logo">
+            //Got logo from Adobe Stocks just fyi//
+            <h1>Family Recipes</h1>
+        </div>
+
+        <button id="addRecipeBtn">+ Add Your Recipe</button>
+    </header>
+    <button id="menuButton">☰ Categories</button>
+    
+    <main>
+
+        //side table content section//
+        <aside class="sidebar">
+
+            <h2>Contents</h2>
+            <ul id="categoryList"></ul>
+
+        </aside>
+        //recipes//
+        <section class="recipes">
+
+            //What the user will see when they first open the page. Just random recipes to look through.//
+            <h2 id="pageTitle">Random Recipes</h2>
+
+            //Recipe cards//
+            <div id="recipeContainer"></div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
